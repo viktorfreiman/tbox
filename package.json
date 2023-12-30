@@ -1,0 +1,22 @@
+{
+  "name": "tbox",
+  "version": "1.0.0",
+  "description": "Tolk (Swedish for interpretation), Talk, Translate box",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktorfreiman/tbox.git"
+  },
+  "author": "Viktor Freiman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viktorfreiman/tbox/issues"
+  },
+  "homepage": "https://github.com/viktorfreiman/tbox#readme",
+  "dependencies": {
+    "livekit-client": "^1.15.5"
+  }
+}

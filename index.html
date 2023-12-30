@@ -1,0 +1,29 @@
+<!-- make basic html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        import { Room } from 'livekit-client';
+
+        const wsURL = "<wsURL>"
+        const token = "<token>"
+
+        const room = new Room();
+        await room.connect(wsURL, token);
+        console.log('connected to room', room.name);
+
+        // publish local camera and mic tracks
+        await room.localParticipant.enableCameraAndMicrophone();
+    </script>
+
+</head>
+
+<body>
+    <h1>hello world</h1>
+</body>
+
+</html>
