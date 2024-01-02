@@ -7,6 +7,19 @@ The thing I missed is bind the port externally.
 
 ``viktor@tbox:~$ ./livekit-server --dev --bind 0.0.0.0``
 
+Setup access to livekit
+
+~~~sh
+vscode ➜ /workspaces/tbox (main) $ livekit-cli project add
+URL: wss://192.168.1.150:7881
+✔ API Key: devkey█
+API Secret: secret
+✔ Give it a name for later reference: tbox█
+? Make this project default?? [y/N] y█
+Saved CLI config to /home/vscode/.livekit/cli-config.yaml
+Added project tbox
+~~~
+
 Make first user
 ``livekit-cli create-token --join --identity user1 --room test``
 
